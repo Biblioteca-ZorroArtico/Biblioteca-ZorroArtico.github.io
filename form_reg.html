@@ -1,0 +1,64 @@
+<!doctype html> 
+ <html> 
+
+   <head> 
+      <meta charset="utf-8"/> 
+      <title>El Zorro Ártico - Registrarse</title>
+      <link rel="stylesheet" href="css/form.css" type="text/css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+   </head> 
+
+   <body>
+
+    <header>
+		<div class="contenedor">
+			<h2 class="logotipo">El Zorro Ártico</h2>
+			<nav>
+				<a href="index.html">Inicio</a>
+				<a href="form_reg.html" class="activo">Registrarse</a>
+				<a href="form_login.html">Iniciar Sesión</a>
+				<a href="biblio.php">Biblioteca</a>
+			</nav>
+		</div>
+	</header>
+   
+        <form action="registro.php" method="post" name="form_reg">
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="text" id="email" name="email" placeholder="ej: zorro@Xmail.com" required maxlength="60">
+
+            <label for="nombre">Escribe tu nombre de usuario:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="ej: Zorro" required maxlength="30" >
+            
+            <label class="password" for="password">Escribe tu contraseña:</label>
+            <input type="password" id="password" name="password" required minlength="8"><br>
+
+            <label class="password" for="password">Repite tu contraseña:</label>
+            <input type="password" id="password" name="password" required minlength="8"><br>
+<!--
+            <label for="rol">Selecciona tu rol:</label>
+            
+            <select name="rol" id="rol" required >
+            <option value="socio" selected >Socio</option>
+            <option value="bibliotecario" >Bibliotecario</option>
+            <option value="administrador" >Administrador</option>
+            <option value="visitante" >Visitante</option>
+            
+            </select>
+-->
+            <input type="checkbox" value="Acepta_RGPD" id="rgpd" required><label for="rgpd" class="rgpd">He leído y acepto el <a href="#" target="_blanck">aviso legal y la política de privacidad</a>.</label>
+
+        <input type="submit" value="Enviar">
+        
+        </form>
+
+
+
+
+
+
+
+
+   </body>
+
+ </html>

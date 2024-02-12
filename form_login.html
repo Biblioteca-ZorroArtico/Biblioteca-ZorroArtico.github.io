@@ -1,0 +1,38 @@
+<!doctype html> 
+ <html> 
+
+   <head> 
+      <meta charset="utf-8"/> 
+      <title>El Zorro Ártico - Login</title>
+      <link rel="stylesheet" href="css/form.css" type="text/css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+   </head> 
+
+   <body>
+
+    <header>
+		<div class="contenedor">
+			<h2 class="logotipo">El Zorro Ártico</h2>
+			<nav>
+				<a href="index.html">Inicio</a>
+				<a href="form_reg.html">Registrarse</a>
+				<a href="form_login.html" class="activo">Iniciar Sesión</a>
+				<a href="biblio.php">Biblioteca</a>
+			</nav>
+		</div>
+	</header>
+   
+    <form action="login.php" method="post" name="form_login">
+        <label for="nombre">Nombre de Usuario:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label class="password" for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+
+        <input type="submit" value="Iniciar Sesión" name="enviar">
+    </form>
+
+
+   </body>
+
+ </html>
